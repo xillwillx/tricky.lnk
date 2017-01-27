@@ -25,3 +25,8 @@ or
 download the tricky.ps1 and execute it for the commandline: 
 
 `powershell -ExecutionPolicy Bypass -noLogo -File tricky.ps1`
+
+:UPDATE:
+Added additional powershell file generator tricky2.ps1
+
+![alt text](tricky.jpg "powershell unicode .lnk generator")
