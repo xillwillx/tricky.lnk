@@ -9,7 +9,7 @@ This trick uses the fact that some languages are being written from right side t
 more information on this character here. http://www.fileformat.info/info/unicode/char/202e/index.htm
 
 
-####How-To:
+#### How-To:
 Download the .vbs file and edit the download url to point to your own payload. save the .vbs and execute it. The malicious .lnk file will be created on your desktop. Send that to phishing target. May need to obfuscate further to bypass email security appliances.
 
 ---
@@ -17,7 +17,7 @@ Download the .vbs file and edit the download url to point to your own payload. s
 #### Powershell Bonus: 
 Created a PowerShell script that does the same thing, oddly enough it doesnt show the reverse lnk in the filename like the .vbs script does. 
 
-####How-To:
+#### How-To:
 Press windows key + R , type powershell, hit enter, copy the contents of tricky.ps1, in the powershell window right-click to paste the contents, then hit enter, you should see a file named ReadMe.txt appear on the desktop with a notepad icon. (obviously change the web address to your own payload)
 
 or
@@ -26,7 +26,7 @@ download the tricky.ps1 and execute it for the commandline:
 
 `powershell -ExecutionPolicy Bypass -noLogo -File tricky.ps1`
 
-:UPDATE:
-Added additional powershell file generator tricky2.ps1
+#### UPDATE:
+- Added additional powershell file generator tricky2.ps1
 
 ![alt text](tricky.jpg "powershell unicode .lnk generator")
