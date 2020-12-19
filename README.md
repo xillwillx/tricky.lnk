@@ -1,3 +1,7 @@
+Account moved to: https://gitlab.com/illwill 
+
+
+
 # tricky.lnk
 .VBS that creates a .lnk file spoofing the file extension with unicode chars that reverses the .lnk file extension, appends  ".txt" to the end and changes the icon to notepad to make it appear as a textfile. When executed, the payload is a powershell webdl and execute.
 
